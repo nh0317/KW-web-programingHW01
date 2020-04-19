@@ -1,0 +1,70 @@
+<!DOCTPYE html>
+<html>
+
+<head>
+	<title> PORTFOLIO </title>
+	<style type="text/css">
+		@import url('style.css');
+		/*색이 변하는 new 아이콘 만들기*/
+		@keyframes newAnimation {
+			0% {color: black;}
+			50% {color: white;}
+		}
+		span {
+			animation-name: newAnimation; animation-duration: 3s; animation-iteration-count:infinite;
+			width: 70px; padding: 5px; border-radius: 10px; background: red;
+			font-family: "만화진흥원체"; font-size: 18px;
+			}
+
+		/*인라인 박스생성*/
+		div.works{
+			display: inline-block;
+			height : 200px;
+			margin: 10px;
+			}
+
+		/*미디어 크기 설정*/
+		img { height:150px; margin-bottom: 5px;}
+		video {height:150px; margin-bottom: 5px;}
+
+		/*마이스를 대면 미디어의 크기를 확대하는 전환*/
+		img{transition: height 2s;}
+		img:hover {
+			height: 200px;
+		}
+		video{transition: height 2s;}
+		video:hover {
+			height: 200px;
+		}
+
+	</style>
+</head>
+
+<body>
+<div>
+	<h1 style="text-align: left">
+		WORKS
+	</h1>
+</div>
+<!--기업의 작업물 소개-->
+<figure>
+<div class="works">
+	<a href = "work1_detail.html" target="_self">
+		<img src="work1.jpg">
+		<div align="center">
+			<span>new</span>당신만을 위한 동화
+		</div>
+	</a>
+</div>
+<div class="works">
+	<a href = "work2_detail.html" target="_self">
+		<video src="work2.mp4" autoplay="autoplay" muted="muted">video is unfound</video>
+		<div align="center">
+			바다와 같은 청량함을 당신에게
+		</div>
+	</a>
+</div>
+</figure>
+</body>
+
+</html>

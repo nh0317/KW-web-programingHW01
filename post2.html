@@ -1,0 +1,100 @@
+<!DOCTPYE html>
+<html>
+
+<head>
+	<title> POST2 </title>
+	<style type="text/css">
+		@import url('style.css');
+		div.box{
+			width: 600px;
+			padding: 10px;
+			background: pink;
+			margin: 0 auto;
+		}
+
+		/*폼 스타일 적용*/
+		input[type=email]{
+			border: 2px solid pink;
+			color: red;
+		}
+		#box2{
+			border: 3px solid lightgray;
+			padding: 10px;
+			width: 800px;
+			margin-left: -50px;
+		}
+		form{
+			width: 800px;
+			margin: 0 auto;
+
+		}
+		textarea{
+			border: 2px solid pink;
+			color: red;
+		}
+	</style>
+</head>
+
+<body> 
+	<!--설문조사 폼-->
+<section>
+	<header><h1> 설문조사 이벤트<br> </h1></header>
+	<article>
+	<div class="box">
+			여러분들의 의견을 듣기 위하여 설문조사를 실시하고 있습니다.<br>
+			설문조사를 실시하신 분들은 추첨을 통해 소정의 선물을 드리고 있으니 많은 참여 부탁드립니다.<br>
+			항상 여러분의 의견을 소중하게 듣는 기업이되도록 하겠습니다.<br>
+			감사합니다.<br>
+	</div>
+	</article>
+</section>
+<figure>
+	<form name="survey" method="get">
+		<div align="center">
+		<ol type="1.">
+			<li id="box2">
+				저희 서비스를 이용해본적이 있습니까? <br>
+				<label>
+				<input type="radio" name="yes" value="1">네.
+				</label>
+				<label>
+				<input type="radio" name="no" value="2">아니요. 
+				</label>
+			
+				<br><br>
+				<ol type="a">
+					<li>
+						(1번에서 '네'를 선택한 경우) 가장 마음에 드는 서비스를 선택해주세요.<br>
+						<select name="favorite">
+							<option value="1">당신만을 위한 동화</option>
+							<option value="2">청량한 바다를 당신에게</option>
+						</select>
+					</li>
+					<br><br>
+					<li>
+						(1번에서 '네'를 선택한 경우) 서비스를 이용하면서 불편했던 점이 있다면 알려주세요.<br>
+						<textarea cols="100" rows="6"></textarea>
+					</li>
+				</ol>
+				<br><br>
+			</li>
+			<li id="box2">
+				저희에게 원하는 서비스가 있나요?<br>
+				<textarea cols="100" rows="6"></textarea>
+			</li>
+			<li id="box2">
+				선물 당첨 여부를 알려드릴 이메일을 입력해주세요.
+				<input type="email" name="email" placeholder="id@host">
+			</li>
+			<br>
+			<input type="submit" name="submit" value="전송">
+		</ol>
+	</div>
+	</form>
+	<div class="button">
+	<a href="post.html" target="_self"> 목록 보기 </a>
+</div>
+</figure>
+</body>
+
+</html>
