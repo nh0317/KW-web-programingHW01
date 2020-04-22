@@ -17,7 +17,7 @@ ol li{margin-bottom: 5px;}
 /*포트폴리오 상세보기*/
 #float {
 	float : left;
-	height : 400px;
+	width: 600px;
 	margin-right : 10px;
 		}
 div.introduction{
